@@ -1,0 +1,19 @@
+document/document_inline.go
+  s_9f4813dc88149e::t_4a59090544e8d3 58-60,62,72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "348b578deef8c9fc7856634a71b897e67502c049",
+  "prompts": {},
+  "sessions": {
+    "s_9f4813dc88149e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_9f4813dc88149e",
+        "model": "unknown"
+      },
+      "human_author": "Federico <federico.arias@deliveryhero.com>"
+    }
+  }
+}
