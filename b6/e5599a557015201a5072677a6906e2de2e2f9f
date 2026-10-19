@@ -1,0 +1,29 @@
+document/document.go
+  s_fb8b403bf5ec3f::t_2532cf39626b8a 32,39-49
+document/document_inline.go
+  s_fb8b403bf5ec3f::t_a84c7bb2cee302 1-93
+document/document_table.go
+  s_fb8b403bf5ec3f::t_4e20ed41adf899 65
+inline_test.go
+  s_fb8b403bf5ec3f::t_86a48c909790c7 1-103
+mdtopdf.go
+  s_fb8b403bf5ec3f::t_5ca39e608643c0 15-32,35-44,60,67,73
+README.md
+  s_fb8b403bf5ec3f::t_360c5e17efdc7b 42-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b6e5599a557015201a5072677a6906e2de2e2f9f",
+  "prompts": {},
+  "sessions": {
+    "s_fb8b403bf5ec3f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b8a81667-c15a-404c-b65a-42b3d9fc8361",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Federico <federico.arias@deliveryhero.com>"
+    }
+  }
+}
