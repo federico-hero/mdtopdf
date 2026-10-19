@@ -55,8 +55,11 @@ func (d *Document) writeInlineImage(lineHeight, size float64, img *InlineImage, 
 	pageW, pageH := d.PDF.GetPageSize()
 	_, _, right, _ := d.PDF.GetMargins()
 
+	// gofpdf draws the text of Write one cell margin to the right of the cursor
+	margin := d.PDF.GetCellMargin()
+
 	x, y := d.PDF.GetXY()
-	if x+size > pageW-right+0.01 {
+	if x+margin+size > pageW-right+0.01 {
 		d.PDF.Ln(lineHeight)
 		x, y = d.PDF.GetXY()
 	}
@@ -66,7 +69,7 @@ func (d *Document) writeInlineImage(lineHeight, size float64, img *InlineImage, 
 	}
 
 	opts := d.registerInlineImage(img)
-	d.PDF.ImageOptions(img.Name, x, y+(lineHeight-size)/2, size, size, false, opts, 0, link)
+	d.PDF.ImageOptions(img.Name, x+margin, y+(lineHeight-size)/2, size, size, false, opts, 0, link)
 	d.PDF.SetX(x + size*(1+inlineImageGap))
 }
 
